@@ -6,5 +6,5 @@ const router = (0, express_1.Router)();
 router.post("/", todo_1.createTodo);
 router.get("/", todo_1.getTodos);
 router.patch("/:id", todo_1.updateTodo);
-router.delete("/:id");
+router.delete("/:id", todo_1.deleteTodo);
 exports.default = router;
